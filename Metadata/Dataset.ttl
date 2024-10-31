@@ -1,0 +1,55 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045> a dcat:Resource,
+    dcat:Dataset;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indian Crimes Dataset";
+  dcterms:title "Indian Crimes Dataset";
+  dcat:version "Version 1";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2024-10-31T15:50:44.677909055Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2024-10-31T15:52:25.948056104Z"^^xsd:dateTime;
+  dcterms:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+  dcterms:description "This dataset captures a comprehensive snapshot of criminal activities across multiple Indian cities from 2020 to 2024. It includes detailed information about the type of crime, the date and time of occurrence, the weapon used, victim demographics, and the level of police deployment. With crimes ranging from identity theft to homicide, this dataset offers valuable insights for researchers, policymakers, and law enforcement agencies aiming to understand crime patterns and improve public safety. The data also includes information on whether the case was closed, providing a clear view of crime resolution rates across cities.";
+  dcterms:conformsTo <http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604>,
+    <http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604>;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045#identifier>;
+  dcterms:accessRights <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "https://www.kaggle.com/datasets/sudhanvahg/indian-crimes-dataset/data"
+    ];
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <http://localhost:8080/catalog/b9a309d2-5f2f-43c5-870c-b4667505be6e>;
+  dcterms:issued "Tue Aug 20 2024 00:00:00 GMT+0200 (hora de verano de Europa central)"^^<http://www.w3.org/ns/shacl#Literal>;
+  dcterms:modified "Wed Aug 21 2024 00:00:00 GMT+0200 (hora de verano de Europa central)"^^<http://www.w3.org/ns/shacl#Literal>;
+  dcat:theme <https://www.wikidata.org/wiki/Q83267>;
+  dcat:keyword "Crime", "India" .
+
+<http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045#identifier> a
+    <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045" .
+
+<http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost:8080/distribution/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Distributions", "Distributions";
+  ldp:hasMemberRelation dcat:distribution, dcat:distribution;
+  ldp:membershipResource <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045>,
+    <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045> .
+
+<http://localhost:8080/profile/2f08228e-1789-40f8-84cd-28e3288c3604> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Dataset Profile", "Dataset Profile" .
+
+<http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
