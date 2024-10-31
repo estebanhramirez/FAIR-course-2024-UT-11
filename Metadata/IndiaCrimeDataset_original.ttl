@@ -1,0 +1,51 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224> a dcat:Resource,
+    dcat:Distribution;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Original Indian Crimes Dataset";
+  dcterms:title "Original Indian Crimes Dataset";
+  dcat:version "Version 1";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2024-10-31T16:05:54.393560942Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2024-10-31T16:05:54.393560942Z"^^xsd:dateTime;
+  dcterms:license <http://purl.org/NET/rdflicense/cc-zero1.0>;
+  dcterms:description "Metadata concerning the original Indian Crimes Dataset";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224#identifier>;
+  dcterms:accessRights <http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "https://www.kaggle.com/sudhanvahg"
+    ];
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <http://localhost:8080/dataset/6b8b24c2-eb41-4569-81a8-13d4065f8045>;
+  dcterms:issued "Tue Aug 20 2024 00:00:00 GMT+0200 (hora de verano de Europa central)"^^<http://www.w3.org/ns/shacl#Literal>;
+  dcterms:modified "Wed Aug 21 2024 00:00:00 GMT+0200 (hora de verano de Europa central)"^^<http://www.w3.org/ns/shacl#Literal>;
+  dcat:accessURL <https://www.kaggle.com/datasets/sudhanvahg/indian-crimes-dataset/data>;
+  dcat:byteSize "4.94 MB";
+  dcat:downloadURL <https://www.kaggle.com/datasets/sudhanvahg/indian-crimes-dataset/data>;
+  dcat:format "csv";
+  dcat:mediaType "csv";
+  dcterms:conformsTo <http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7> .
+
+<http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224" .
+
+<http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost:8080/distribution/8fae2e13-1c38-45c8-9c63-0fd2d811e224/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://localhost:8080/profile/02c649de-c579-43bb-b470-306abdc808c7> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Distribution Profile" .
